@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/adaptivecards.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="lib/pyscript/pyscript.css" />
+
+    <script defer src="lib/pyscript/pyscript.js"></script>
+
+    <script src="lib/adaptivecards/adaptivecards.js"></script>
+    <script src="lib/adaptivecards/adaptivecards-templating.min.js"></script>
+    <script src="js/card.js"></script>
+    <script src="/data/ui.js"> </script>
+    <script src="/data/ui-data.js"> </script>
+    <style type="text/tailwindcss">
+        .ac-pushButton{
+            @apply w-full h-full;
+        }
+      </style>
+
+    <py-env>
+
+    </py-env>
+</head>
+
+<body>
+    <div class="flex justify-center relative">
+        <div id="fasttext" class="w-full lg:w-3/5"></div>
+    </div>
+
+    <script type="text/javascript">
+        subjectsCard = createCard(card, card_data);
+        subjectsCard.onExecuteAction = function (action) { console.log(action) }
+        document.getElementById("fasttext").appendChild(subjectsCard.render());
+    </script>
+    <py-script src="/py/fasttext.py"></py-script>
+
+
+</body>
+
+</html>
