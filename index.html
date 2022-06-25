@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/adaptivecards.css" />
+    <link rel="stylesheet" href="/fasttext/css/adaptivecards.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="lib/pyscript/pyscript.css" />
+    <link rel="stylesheet" href="/fasttext/lib/pyscript/pyscript.css" />
 
-    <script defer src="lib/pyscript/pyscript.js"></script>
+    <script defer src="/fasttext/lib/pyscript/pyscript.js"></script>
 
-    <script src="lib/adaptivecards/adaptivecards.js"></script>
-    <script src="lib/adaptivecards/adaptivecards-templating.min.js"></script>
-    <script src="js/card.js"></script>
-    <script src="/data/ui.js"> </script>
-    <script src="/data/ui-data.js"> </script>
+    <script src="/fasttext/lib/adaptivecards/adaptivecards.js"></script>
+    <script src="/fasttext/lib/adaptivecards/adaptivecards-templating.min.js"></script>
+    <script src="/fasttext/js/card.js"></script>
+    <script src="/fasttext/data/ui.js"> </script>
+    <script src="/fasttext/data/ui-data.js"> </script>
     <style type="text/tailwindcss">
         .ac-pushButton{
             @apply w-full h-full;
@@ -36,7 +36,7 @@
         subjectsCard.onExecuteAction = function (action) { console.log(action) }
         document.getElementById("fasttext").appendChild(subjectsCard.render());
     </script>
-    <py-script src="/py/fasttext.py"></py-script>
+    <py-script src="/fasttext/py/fasttext.py"></py-script>
 
 
 </body>
